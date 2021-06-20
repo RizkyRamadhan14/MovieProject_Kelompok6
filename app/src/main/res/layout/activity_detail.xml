@@ -1,0 +1,132 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical"
+    tools:context=".View.Activity.DetailActivity"
+    android:background="@color/teal_300">
+
+    <FrameLayout
+        android:layout_width="match_parent"
+        android:layout_height="200dp">
+        <ImageView
+            android:id="@+id/imagePosterBack"
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:scaleType="fitXY"
+            android:src="@drawable/ic_launcher_background"
+            />
+    </FrameLayout>
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="240dp"
+        android:orientation="horizontal"
+        android:paddingLeft="8dp"
+        android:paddingRight="8dp"
+        android:layout_marginTop="20dp"
+        android:background="@color/red">
+
+        <ImageView
+            android:id="@+id/itemdata_iv_thumbnail"
+            android:layout_width="180dp"
+            android:layout_height="match_parent"
+            android:src="@drawable/ic_launcher_background" />
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginLeft="8dp"
+            android:layout_marginRight="8dp"
+            android:padding="3dp"
+            android:orientation="vertical"
+            android:layout_gravity="center_vertical">
+
+            <TextView
+                android:id="@+id/itemdata_tv_title"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:text="Title"
+                android:textStyle="bold"
+                android:textColor="@color/grey_300"
+                android:textSize="25dp"
+                android:paddingLeft="3dp"/>
+
+            <TextView
+                android:layout_width="match_parent"
+                android:layout_height="25dp"
+                android:text="User Score"
+                android:textColor="@color/white"
+                android:textSize="20dp"
+                android:textStyle="bold"
+                android:paddingLeft="5dp"/>
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="25dp">
+
+                <ImageView
+                    android:layout_width="wrap_content"
+                    android:layout_height="25dp"
+                    android:src="@drawable/ic_rate"
+                    android:paddingLeft="5dp"/>
+
+                <TextView
+                    android:id="@+id/itemdata_tv_rate"
+                    android:layout_width="wrap_content"
+                    android:layout_height="match_parent"
+                    android:layout_gravity="center_vertical"
+                    android:text="10.0"
+                    android:textColor="@color/white"
+                    android:textSize="20dp"
+                    android:paddingLeft="5dp"/>
+            </LinearLayout>
+            <TextView
+                android:layout_width="match_parent"
+                android:layout_height="25dp"
+                android:text="Release Date"
+                android:textColor="@color/white"
+                android:textSize="18dp"
+                android:textStyle="bold"
+                android:paddingLeft="5dp"/>
+            <TextView
+                android:id="@+id/itemdata_tv_releasedate"
+                android:layout_width="wrap_content"
+                android:layout_height="25dp"
+                android:layout_gravity="center_vertical"
+                android:text="10.0"
+                android:textColor="@color/white"
+                android:textSize="20dp"
+                android:paddingLeft="5dp"
+                android:layout_marginBottom="6dp"/>
+            <ImageView
+                android:id="@+id/itemdata_iv_favorite"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:src="@drawable/ic_favorite"
+                android:paddingLeft="5dp"/>
+        </LinearLayout>
+    </LinearLayout>
+
+    <TextView
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:text="Kilasan Singkat"
+        android:textColor="@color/white"
+        android:textSize="25dp"
+        android:textStyle="bold"
+        android:layout_marginTop="15dp"
+        android:paddingLeft="16dp"
+        android:paddingRight="8dp"/>
+
+    <TextView
+        android:id="@+id/itemdata_movie_overview"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:text="bla bla bla bla"
+        android:textColor="@color/white"
+        android:textSize="18dp"
+        android:paddingLeft="16dp"
+        android:paddingRight="8dp"/>
+</LinearLayout>

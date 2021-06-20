@@ -1,0 +1,62 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.cardview.widget.CardView
+    android:id="@+id/itemlist_cv"
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="180dp"
+    android:layout_height="240dp"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    app:cardElevation="8dp"
+    app:cardCornerRadius="8dp"
+    android:layout_margin="6dp">
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:orientation="vertical"
+        android:background="@color/teal_300">
+
+        <ImageView
+            android:layout_marginTop="10dp"
+            android:id="@+id/itemlist_iv_thumbnail"
+            android:src="@drawable/ic_launcher_background"
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:layout_weight="1"/>
+        <LinearLayout
+            android:layout_marginStart="10dp"
+            android:layout_marginEnd="10dp"
+            android:orientation="horizontal"
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:layout_weight="3">
+
+            <TextView
+                android:id="@+id/itemlist_movie_title"
+                android:text="Movie Title"
+                android:textSize="16sp"
+                android:layout_weight="1"
+                android:textColor="@color/white"
+                android:gravity="center_vertical"
+                android:layout_width="match_parent"
+                android:layout_height="match_parent"/>
+            <ImageView
+                android:layout_width="wrap_content"
+                android:layout_height="match_parent"
+                android:src="@drawable/ic_rate"/>
+            <TextView
+                android:id="@+id/itemlist_tv_rate"
+                android:layout_width="wrap_content"
+                android:layout_height="match_parent"
+                android:textColor="@color/white"
+                android:text="10.0"
+                android:gravity="center_vertical"/>
+
+        </LinearLayout>
+        <TextView
+            android:id="@+id/itemlist_tv_id"
+            android:layout_width="0dp"
+            android:layout_height="0dp"/>
+
+    </LinearLayout>
+
+</androidx.cardview.widget.CardView>

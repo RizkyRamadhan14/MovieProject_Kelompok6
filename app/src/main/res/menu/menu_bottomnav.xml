@@ -1,0 +1,31 @@
+<?xml version="1.0" encoding="utf-8"?>
+<menu xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    >
+    <item
+        android:id="@+id/menu_bottomnav_popular"
+        android:title="Popular"
+        android:icon="@drawable/ic_popular"
+        app:showAsAction="ifRoom"
+        />
+    <item
+        android:id="@+id/menu_bottomnav_movie"
+        android:title="Movie"
+        android:icon="@drawable/ic_movie"
+        app:showAsAction="ifRoom"
+        />
+    <item
+        android:id="@+id/menu_bottomnav_tvshow"
+        android:title="TV Show"
+        android:icon="@drawable/ic_tv_shows"
+        app:showAsAction="ifRoom"
+        />
+    <item
+        android:id="@+id/menu_bottomnav_fav"
+        android:title="Favorite"
+        android:icon="@drawable/ic_favorite"
+        app:showAsAction="ifRoom"
+        />
+
+
+</menu>
